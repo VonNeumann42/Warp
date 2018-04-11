@@ -12,4 +12,20 @@ app.listen(port, function() {
 	console.log('Affirmative');
 });
 
+app.get('/', (req, res) => {
+	res.sendFile(__dirname + '/index.html');
+})
+
+app.post('/calculate', (req, res) => {
+	const bitrate = req.body['bitrate'];
+	const duration = req.body['duration'];
+	console.log(bitrate);
+	res.render('well', {
+		'bitrate': bitrate,
+		'duration': duration,
+		'result': bitrate * duration
+	})
+	
+})
+
 
