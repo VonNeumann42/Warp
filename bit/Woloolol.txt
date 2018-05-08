@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 blayt sucka
+=======
+Hallo blyat
+>>>>>>> origin/master
